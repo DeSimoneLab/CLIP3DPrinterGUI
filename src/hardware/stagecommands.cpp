@@ -31,18 +31,29 @@ int StageCommands::StageInit(const char* COMPort, Stage_t StageType) {
             printf("KVS stage connected\n");
             Sleep(10);
 
-            byte message[6] = { 0x23, 0x02, 0x00, 0x00, 0x50, 0x01 }; // identify
-
             int result;
-            result = StageSerial.writeBytes(message, 6);
-            printf("Sent message, result: %d\n", result);
+
+            byte message1[6] = { 0x23, 0x02, 0x00, 0x00, 0x50, 0x01 }; // identify
+            result = StageSerial.writeBytes(message1, 6);
+            printf("Sent message1, result: %d\n", result);
+
+
+            Sleep(10);
+
+
+            // byte message2[6] = { 0x43, 0x04, 0x00, 0x00, 0x50, 0x01 }; // home
+            byte message2[6] = { 0x05, 0x00, 0x00, 0x00, 0x50, 0x01 }; // req info
+            result = StageSerial.writeBytes(message2, 6);
+            printf("Sent message2, result: %d\n", result);
+
+            Sleep(10);
 
             byte response[100];
             for (int i = 0; i < 100; i++)   response[i] = 0;
 
-            //result = StageSerial.readBytes(response, 100);
+            result = StageSerial.readBytes(response, 100, 2000);
 
-            printf("Read message, result: %d\n", result);
+            printf("Read response, result: %d\n", result);
 
             for (int i = 0; i < 100; i++)   printf("%X ", response[i]);
             printf("\n");
