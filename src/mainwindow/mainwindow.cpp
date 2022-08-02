@@ -613,6 +613,26 @@ void MainWindow::on_CLIPSelect_clicked() {
   ui->SettingsWidget->EnableParameter(MIN_END, ON);
 }
 
+void MainWindow::on_NewCLIPSelect_clicked() {
+    printf("KVS Stage Selected");
+  m_PrintSettings.StageType = STAGE_KVS;  // Set stage to SMC100CC for the 30 um CLIP printer
+  m_PrintSettings.PrinterType = CLIP30UM; // Update printer type
+
+  //Disable the injection parameters
+  ui->SettingsWidget->EnableParameter(CONTINUOUS_INJECTION, OFF);
+  ui->SettingsWidget->EnableParameter(INJECTION_VOLUME, OFF);
+  ui->SettingsWidget->EnableParameter(INJECTION_RATE, OFF);
+  ui->SettingsWidget->EnableParameter(INITIAL_VOLUME, OFF);
+  ui->SettingsWidget->EnableParameter(INJECTION_DELAY, OFF);
+
+  //Enable the starting position selection
+  ui->SettingsWidget->EnableParameter(STARTING_POSITION, ON);
+
+  //Enable the stage software limits
+  ui->SettingsWidget->EnableParameter(MAX_END, ON);
+  ui->SettingsWidget->EnableParameter(MIN_END, ON);
+}
+
 /*************************************File Handling************************************************/
 /*!
  * \brief MainWindow::on_LogFileBrowse_clicked

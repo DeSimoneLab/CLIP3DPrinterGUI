@@ -25,6 +25,7 @@
 typedef enum StageType {
   STAGE_SMC,
   STAGE_GCODE,
+  STAGE_KVS
 } Stage_t;
 
 typedef enum Parameter {

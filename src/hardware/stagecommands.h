@@ -4,6 +4,7 @@
 #include <QObject>
 #include "PrintElements.h"
 #include "SMC100C.h"
+#include "KVS30.h"
 
 /*!
  * \brief The StageCommands class handles the vertical translation
@@ -25,6 +26,7 @@ class StageCommands: public QObject {
 
   bool isConnected = false;
   SMC100C SMC;
+  KVS30 KVS;
 
   int StageInit(const char* COMPort, Stage_t StageType);
   int StageClose(Stage_t StageType);

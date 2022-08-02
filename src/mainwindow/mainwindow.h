@@ -77,6 +77,8 @@ class MainWindow : public QMainWindow {
 
   void on_CLIPSelect_clicked();
 
+  void on_NewCLIPSelect_clicked();
+
   void updatePosition(QString CurrentPosition);
 
   void StageConnected();

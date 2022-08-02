@@ -22,6 +22,7 @@ RC_ICONS = DeSimoneLogo.ico
 
 SOURCES += \
     src/3rdparty/ThorLabs/load_dll_helpers/tl_camera_sdk_load.c \
+    src/hardware/KVS30.cpp \
     src/hardware/SMC100C.cpp \
     src/hardware/dlp9000.cpp \
     src/mainwindow/graphics.cpp \
@@ -46,6 +47,7 @@ HEADERS += \
     src/3rdparty/ThorLabs/load_dll_helpers/tl_camera_sdk_load.h \
     src/PrintElements.h \
     src/3rdparty/PtnImage.h \
+    src/hardware/KVS30.h \
     src/hardware/SMC100C.h \
     src/hardware/dlp9000.h \
     src/mainwindow/graphics.h \
