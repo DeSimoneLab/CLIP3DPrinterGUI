@@ -1363,6 +1363,7 @@ void MainWindow::refreshScript() {
 void MainWindow::on_PumpDropdown_activated(int index)
 {
     PumpSelect = (PumpSelect_t) index;
+    PumpSelect_f(PumpSelect);
 
     PrintToTerminal("Selected Pump: " + ui->PumpDropdown->currentText());
 }
@@ -1420,6 +1421,7 @@ void MainWindow::PumpSelect_f(PumpSelect_t index)
     case PUMP_DEBUG:
         m_PrintSettings.PrinterType = ICLIP;        // Update printer type
 
+        //PrintToTerminal("Selected Harvard Apparatus or Debug Pump");
         // Enable the injection parameters
         ui->SettingsWidget->EnableParameter(CONTINUOUS_INJECTION, ON);
         ui->SettingsWidget->EnableParameter(INJECTION_VOLUME, ON);
