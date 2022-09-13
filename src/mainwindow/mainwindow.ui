@@ -29,7 +29,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout_4" rowstretch="90,37" columnstretch="18,45">
+   <layout class="QGridLayout" name="gridLayout_4" rowstretch="90,0" columnstretch="18,0">
     <property name="leftMargin">
      <number>7</number>
     </property>
@@ -48,361 +48,20 @@
     <property name="verticalSpacing">
      <number>7</number>
     </property>
-    <item row="0" column="0" rowspan="2">
-     <layout class="QGridLayout" name="gridLayout_3" rowstretch="6,9,51,9" columnstretch="5,3">
-      <item row="2" column="0" colspan="2">
-       <widget class="QTabWidget" name="tabWidget_2">
-        <property name="currentIndex">
-         <number>1</number>
-        </property>
-        <widget class="QWidget" name="tab_4">
-         <attribute name="title">
-          <string>Print Customization</string>
-         </attribute>
-         <layout class="QGridLayout" name="gridLayout_5">
-          <property name="topMargin">
-           <number>0</number>
-          </property>
-          <property name="bottomMargin">
-           <number>0</number>
-          </property>
-          <item row="0" column="1">
-           <widget class="printsettings" name="SettingsWidget" native="true"/>
-          </item>
-         </layout>
-        </widget>
-        <widget class="QWidget" name="tab_5">
-         <attribute name="title">
-          <string>Terminal Output</string>
-         </attribute>
-         <layout class="QGridLayout" name="gridLayout_12" rowstretch="10,10,50">
-          <property name="topMargin">
-           <number>0</number>
-          </property>
-          <property name="bottomMargin">
-           <number>0</number>
-          </property>
-          <item row="1" column="0">
-           <widget class="QGroupBox" name="groupBox">
-            <property name="title">
-             <string>Edit Log Title</string>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_4">
-             <property name="leftMargin">
-              <number>5</number>
-             </property>
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <property name="rightMargin">
-              <number>5</number>
-             </property>
-             <item>
-              <widget class="QTextEdit" name="LogName">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background:white; border: 1px solid black;</string>
-               </property>
-               <property name="verticalScrollBarPolicy">
-                <enum>Qt::ScrollBarAlwaysOff</enum>
-               </property>
-               <property name="sizeAdjustPolicy">
-                <enum>QAbstractScrollArea::AdjustIgnored</enum>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QGroupBox" name="resetBox">
-            <property name="title">
-             <string>Reset</string>
-            </property>
-            <layout class="QGridLayout" name="gridLayout_11">
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <property name="bottomMargin">
-              <number>11</number>
-             </property>
-             <item row="0" column="0">
-              <widget class="QPushButton" name="resetButton">
-               <property name="text">
-                <string>Reset For Next Print</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item row="2" column="0" colspan="2">
-           <widget class="QTextBrowser" name="ProgramPrints">
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(255, 255, 255);</string>
-            </property>
-            <property name="html">
-             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0" colspan="2">
-           <widget class="QGroupBox" name="LogDestinationBox">
-            <property name="title">
-             <string>Set Log File Destination</string>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="4,1">
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <item>
-              <widget class="QLabel" name="LogFileLocation">
-               <property name="styleSheet">
-                <string notr="true">background:white; border: 1px solid black;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="LogFileBrowse">
-               <property name="text">
-                <string> Browse</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </widget>
-      </item>
-      <item row="3" column="0" colspan="2">
-       <widget class="QGroupBox" name="PopoutBox">
+    <item row="0" column="1">
+     <widget class="graphics" name="GraphicWindow" native="true"/>
+    </item>
+    <item row="1" column="1">
+     <layout class="QGridLayout" name="gridLayout_2" columnstretch="6,15,19">
+      <property name="horizontalSpacing">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="ActiveControlBox">
         <property name="title">
-         <string>Popout Windows</string>
+         <string>Active Controls</string>
         </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <property name="leftMargin">
-          <number>5</number>
-         </property>
-         <property name="topMargin">
-          <number>0</number>
-         </property>
-         <property name="rightMargin">
-          <number>5</number>
-         </property>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout">
-           <item>
-            <widget class="QPushButton" name="ImageProcess">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>60</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Image 
- Processing</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="FocusCal">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>60</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Focus
-Calibration</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="ManualPumpControl">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>60</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Manual 
- Pump Control</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="ManualStage">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>60</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Manual
- Stage Control</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QGroupBox" name="PrinterSelectBox">
-        <property name="autoFillBackground">
-         <bool>true</bool>
-        </property>
-        <property name="title">
-         <string>Select Printer</string>
-        </property>
-        <layout class="QGridLayout" name="gridLayout">
-         <property name="topMargin">
-          <number>0</number>
-         </property>
-         <item row="2" column="1">
-          <widget class="QRadioButton" name="DICLIPSelect">
-           <property name="layoutDirection">
-            <enum>Qt::RightToLeft</enum>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
-           </property>
-           <property name="text">
-            <string>iCLIP </string>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>40</width>
-             <height>40</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <spacer name="horizontalSpacer">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item row="0" column="0">
-          <spacer name="horizontalSpacer_2">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item row="0" column="1">
-          <widget class="QRadioButton" name="CLIPSelect">
-           <property name="layoutDirection">
-            <enum>Qt::RightToLeft</enum>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
-           </property>
-           <property name="text">
-            <string>CLIP </string>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>40</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QRadioButton" name="NewCLIPSelect">
-           <property name="layoutDirection">
-            <enum>Qt::RightToLeft</enum>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
-           </property>
-           <property name="text">
-            <string>New CLIP </string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QGroupBox" name="ProjectionModeBox">
-        <property name="autoFillBackground">
-         <bool>true</bool>
-        </property>
-        <property name="title">
-         <string>Select Projection Mode</string>
-        </property>
-        <property name="flat">
-         <bool>false</bool>
-        </property>
-        <layout class="QGridLayout" name="gridLayout_6">
+        <layout class="QVBoxLayout" name="verticalLayout">
          <property name="leftMargin">
           <number>5</number>
          </property>
@@ -413,125 +72,115 @@ Calibration</string>
           <number>5</number>
          </property>
          <property name="bottomMargin">
-          <number>5</number>
+          <number>15</number>
          </property>
-         <property name="horizontalSpacing">
-          <number>7</number>
-         </property>
-         <property name="verticalSpacing">
-          <number>1</number>
-         </property>
-         <item row="2" column="0">
-          <widget class="QCheckBox" name="VideoCheckbox">
-           <property name="layoutDirection">
-            <enum>Qt::RightToLeft</enum>
+         <item>
+          <widget class="QPushButton" name="StartPrint">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
            </property>
            <property name="styleSheet">
-            <string notr="true">font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
+            <string notr="true">QPushButton#StartPrint {
+    background-color: rgb(35, 255, 35);
+    border-style: outset;
+    border-width: 1px;
+    border-color: black;
+}
+
+QPushButton#StartPrint:pressed {
+    background-color: rgb(0, 150, 0);
+    border-style: inset;
+}
+
+QPushButton#StartPrint:hover:!pressed {
+    background-color:rgb(35,215,35);
+}
+
+</string>
            </property>
            <property name="text">
-            <string>Video</string>
+            <string>Start Print</string>
            </property>
           </widget>
          </item>
-         <item row="0" column="1" rowspan="3">
-          <widget class="QGroupBox" name="DisplayCableBox">
+         <item>
+          <widget class="QPushButton" name="InitializeAndSynchronize">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Initialize
+ System</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="AbortPrint">
            <property name="enabled">
             <bool>true</bool>
            </property>
-           <property name="title">
-            <string>Display Cable</string>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
            </property>
-           <layout class="QGridLayout" name="gridLayout_9">
-            <property name="topMargin">
-             <number>0</number>
-            </property>
-            <property name="bottomMargin">
-             <number>8</number>
-            </property>
-            <item row="0" column="0">
-             <widget class="QComboBox" name="DisplayCableList">
-              <property name="enabled">
-               <bool>true</bool>
-              </property>
-              <item>
-               <property name="text">
-                <string>None</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>HDMI</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>DisplayPort</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QCheckBox" name="VP_HDMIcheckbox">
-           <property name="layoutDirection">
-            <enum>Qt::RightToLeft</enum>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
            </property>
            <property name="styleSheet">
-            <string notr="true">font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
+            <string notr="true">QPushButton#AbortPrint {
+    background-color: red;
+    border-style: outset;
+    border-width: 1px;
+    border-color: black;
+}
+
+QPushButton#AbortPrint:pressed {
+    background-color: rgb(150, 0, 0);
+    border-style: inset;
+}
+
+QPushButton#AbortPrint:disabled {
+	background-color: rgb(0,0,255);
+}
+
+QPushButton#AbortPrint:hover:!pressed {
+    background-color:rgb(215,35,35);
+}</string>
            </property>
            <property name="text">
-            <string>VP</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="QCheckBox" name="POTFcheckbox">
-           <property name="layoutDirection">
-            <enum>Qt::RightToLeft</enum>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
-           </property>
-           <property name="text">
-            <string>    POTF  </string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
+            <string>Abort</string>
            </property>
           </widget>
          </item>
         </layout>
        </widget>
       </item>
-      <item row="0" column="0" colspan="2">
-       <widget class="QLabel" name="DeSimoneLabLogo">
-        <property name="styleSheet">
-         <string notr="true">image: url(:/new/pics/desimone_lab_wordmark-nobg.png);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap>:/new/prefix1/desimone_lab_wordmark-nobg.png</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item row="0" column="1">
-     <widget class="graphics" name="GraphicWindow" native="true"/>
-    </item>
-    <item row="1" column="1">
-     <layout class="QGridLayout" name="gridLayout_2" columnstretch="6,15,19">
-      <property name="horizontalSpacing">
-       <number>0</number>
-      </property>
       <item row="0" column="1">
        <widget class="QGroupBox" name="PeripheralsBox">
         <property name="title">
@@ -767,131 +416,6 @@ Calibration</string>
             </widget>
            </item>
           </layout>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QGroupBox" name="ActiveControlBox">
-        <property name="title">
-         <string>Active Controls</string>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <property name="leftMargin">
-          <number>5</number>
-         </property>
-         <property name="topMargin">
-          <number>0</number>
-         </property>
-         <property name="rightMargin">
-          <number>5</number>
-         </property>
-         <property name="bottomMargin">
-          <number>15</number>
-         </property>
-         <item>
-          <widget class="QPushButton" name="StartPrint">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>50</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton#StartPrint {
-    background-color: rgb(35, 255, 35);
-    border-style: outset;
-    border-width: 1px;
-    border-color: black;
-}
-
-QPushButton#StartPrint:pressed {
-    background-color: rgb(0, 150, 0);
-    border-style: inset;
-}
-
-QPushButton#StartPrint:hover:!pressed {
-    background-color:rgb(35,215,35);
-}
-
-</string>
-           </property>
-           <property name="text">
-            <string>Start Print</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="InitializeAndSynchronize">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>50</height>
-            </size>
-           </property>
-           <property name="text">
-            <string>Initialize
- System</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="AbortPrint">
-           <property name="enabled">
-            <bool>true</bool>
-           </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>50</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton#AbortPrint {
-    background-color: red;
-    border-style: outset;
-    border-width: 1px;
-    border-color: black;
-}
-
-QPushButton#AbortPrint:pressed {
-    background-color: rgb(150, 0, 0);
-    border-style: inset;
-}
-
-QPushButton#AbortPrint:disabled {
-	background-color: rgb(0,0,255);
-}
-
-QPushButton#AbortPrint:hover:!pressed {
-    background-color:rgb(215,35,35);
-}</string>
-           </property>
-           <property name="text">
-            <string>Abort</string>
-           </property>
-          </widget>
          </item>
         </layout>
        </widget>
@@ -1370,6 +894,707 @@ QPushButton#AbortPrint:hover:!pressed {
           </layout>
          </item>
         </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0" rowspan="2">
+     <layout class="QGridLayout" name="gridLayout_3" rowstretch="6,0,0,0,0,0,0,0,0,0" columnstretch="5,0">
+      <item row="2" column="0">
+       <widget class="QLabel" name="label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Pump</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="DeSimoneLabLogo">
+        <property name="styleSheet">
+         <string notr="true">image: url(:/new/pics/desimone_lab_wordmark-nobg.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>:/new/prefix1/desimone_lab_wordmark-nobg.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Projection Mode</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0" colspan="2">
+       <widget class="QGroupBox" name="PopoutBox">
+        <property name="title">
+         <string>Popout Windows</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="leftMargin">
+          <number>5</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="ImageProcess">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Image 
+ Processing</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="FocusCal">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Focus
+Calibration</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="ManualPumpControl">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Manual 
+ Pump Control</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="ManualStage">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Manual
+ Stage Control</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="LightEngineDropdown">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text">
+          <string>DLi 3DLP9000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>In-Vision Firebird</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Debugging Dummy</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="8" column="0" colspan="2">
+       <widget class="QTabWidget" name="tabWidget_2">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="tabBarAutoHide">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Print Customization</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="1">
+           <widget class="printsettings" name="SettingsWidget" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string>Terminal Output</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_12" rowstretch="10,10,50">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="1" column="0">
+           <widget class="QGroupBox" name="groupBox">
+            <property name="title">
+             <string>Edit Log Title</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QTextEdit" name="LogName">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background:white; border: 1px solid black;</string>
+               </property>
+               <property name="verticalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="sizeAdjustPolicy">
+                <enum>QAbstractScrollArea::AdjustIgnored</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QGroupBox" name="resetBox">
+            <property name="title">
+             <string>Reset</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_11">
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>11</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="resetButton">
+               <property name="text">
+                <string>Reset For Next Print</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="QTextBrowser" name="ProgramPrints">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QGroupBox" name="LogDestinationBox">
+            <property name="title">
+             <string>Set Log File Destination</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="4,1">
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="LogFileLocation">
+               <property name="styleSheet">
+                <string notr="true">background:white; border: 1px solid black;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="LogFileBrowse">
+               <property name="text">
+                <string> Browse</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Legacy UI</string>
+         </attribute>
+         <widget class="QGroupBox" name="ProjectionModeBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>190</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <property name="title">
+           <string>Select Projection Mode</string>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <property name="horizontalSpacing">
+            <number>7</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>1</number>
+           </property>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="VideoCheckbox">
+             <property name="layoutDirection">
+              <enum>Qt::RightToLeft</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Video</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="VP_HDMIcheckbox">
+             <property name="layoutDirection">
+              <enum>Qt::RightToLeft</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
+             </property>
+             <property name="text">
+              <string>VP</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="POTFcheckbox">
+             <property name="layoutDirection">
+              <enum>Qt::RightToLeft</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
+             </property>
+             <property name="text">
+              <string>    POTF  </string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1" rowspan="3">
+            <widget class="QGroupBox" name="DisplayCableBox">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="title">
+              <string>Display Cable</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_9">
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>8</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QComboBox" name="DisplayCableList">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>None</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>HDMI</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>DisplayPort</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QGroupBox" name="PrinterSelectBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>10</y>
+            <width>312</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <property name="title">
+           <string>Select Printer</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <item row="0" column="2">
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="0">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="1">
+            <widget class="QRadioButton" name="DICLIPSelect">
+             <property name="layoutDirection">
+              <enum>Qt::RightToLeft</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+             </property>
+             <property name="text">
+              <string>iCLIP </string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QRadioButton" name="NewCLIPSelect">
+             <property name="layoutDirection">
+              <enum>Qt::RightToLeft</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+             </property>
+             <property name="text">
+              <string>New CLIP </string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="CLIPSelect">
+             <property name="layoutDirection">
+              <enum>Qt::RightToLeft</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+             </property>
+             <property name="text">
+              <string>CLIP </string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="RollToRollDropdown">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Arduino R2R v.1</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="StageDropdown">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text">
+          <string>Newport GTS70V (SMC100CC Controller)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Thorlabs KVS30/M (Integrated Controller)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stepper Motor Lead Screw (Arduino GCode Controller)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Debugging Dummy</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="PumpDropdown">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Harvard Apparatus</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Debugging Dummy</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Stage</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Light Engine</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="ProjectionModeDropdown">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text">
+          <string>Pattern On The Fly (POTF)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Video Pattern (VP)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">Video</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Roll to Roll</string>
+        </property>
        </widget>
       </item>
      </layout>
