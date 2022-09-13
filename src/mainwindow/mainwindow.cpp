@@ -1610,6 +1610,14 @@ void MainWindow::autoConnect() {
     on_StageConnectButton_clicked();
     //PrintToTerminal("Attempting to connect to Pump");   TODO: Find good validation command for pump
     //on_PumpConnectButton_clicked();
+
+    // Set UI to values determined in dropdown
+    PumpSelect_f((PumpSelect_t) ui->PumpDropdown->currentIndex());
+    RollToRollSelect_f((RollToRollSelect_t) ui->RollToRollDropdown->currentIndex());
+    StageSelect_f((StageSelect_t) ui->StageDropdown->currentIndex());
+    LightEngineSelect_f((LightEngineSelect_t) ui->LightEngineDropdown->currentIndex());
+    ProjectionModeSelect_f((ProjectionModeSelect_t) ui->ProjectionModeDropdown->currentIndex());
+
 }
 
 #if 0
