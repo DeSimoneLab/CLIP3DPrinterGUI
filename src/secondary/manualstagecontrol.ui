@@ -220,7 +220,7 @@
     <rect>
      <x>10</x>
      <y>80</y>
-     <width>241</width>
+     <width>121</width>
      <height>61</height>
     </rect>
    </property>
@@ -230,8 +230,8 @@
    <widget class="QCheckBox" name="DisableEndstopCheckbox">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>20</y>
+      <x>30</x>
+      <y>30</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -247,7 +247,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>20</y>
+      <y>10</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -944,6 +944,19 @@ QPushButton#StopMotion:hover:!pressed {
      <string>Disconnected</string>
     </property>
    </widget>
+  </widget>
+  <widget class="QPushButton" name="StageHomeButton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>100</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Go Home</string>
+   </property>
   </widget>
  </widget>
  <resources/>

@@ -206,3 +206,10 @@ void ManualStageControl::on_DisableEndstopCheckbox_clicked() {
     }
   }
 }
+
+void ManualStageControl::on_StageHomeButton_clicked()
+{
+    ui->TerminalOut->append("Sending Home Command");
+    ms_Stage.StageHome(StageType);
+}
+

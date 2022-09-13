@@ -55,7 +55,9 @@ class ManualStageControl : public QWidget {
 
   void on_DisableEndstopCheckbox_clicked();
 
- private:
+  void on_StageHomeButton_clicked();
+
+private:
   Ui::ManualStageControl* ui;
 
 };
