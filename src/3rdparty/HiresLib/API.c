@@ -235,7 +235,7 @@ int LCR_SetOutputBufferIndex(int index)
 int LCR_Write(BOOL ackRequired)
 {
     if (!ackRequired){
-        printf("ERROR LCR_Write: ackRequired = false\n");
+        //printf("ERROR LCR_Write: ackRequired = false\n");
         return USB_Write(OutputBuffer);
     }
 

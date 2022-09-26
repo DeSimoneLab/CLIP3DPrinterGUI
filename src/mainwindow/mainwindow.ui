@@ -48,9 +48,6 @@
     <property name="verticalSpacing">
      <number>7</number>
     </property>
-    <item row="0" column="1">
-     <widget class="graphics" name="GraphicWindow" native="true"/>
-    </item>
     <item row="1" column="1">
      <layout class="QGridLayout" name="gridLayout_2" columnstretch="6,15,19">
       <property name="horizontalSpacing">
@@ -209,94 +206,10 @@ QPushButton#AbortPrint:hover:!pressed {
              </property>
             </widget>
            </item>
-           <item row="1" column="3">
-            <widget class="QPushButton" name="StageConnectButton">
-             <property name="text">
-              <string>Connect</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="2">
-            <widget class="QLabel" name="StageConnectionIndicator">
-             <property name="styleSheet">
-              <string notr="true">background:rgb(255, 0, 0); border: 1px solid black;</string>
-             </property>
-             <property name="text">
-              <string>Disconnected</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="2">
-            <widget class="QLabel" name="LightEngineIndicator">
-             <property name="styleSheet">
-              <string notr="true">background:rgb(255, 0, 0); border: 1px solid black;</string>
-             </property>
-             <property name="text">
-              <string>Disconnected</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
            <item row="0" column="0" colspan="2">
             <widget class="QLabel" name="LightEngineConnectionTitle">
              <property name="text">
               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Light Engine:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="1">
-            <widget class="QComboBox" name="COMPortSelect">
-             <item>
-              <property name="text">
-               <string>COM3</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>COM4</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>COM5</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>COM6</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>COM7</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>COM8</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>COM9</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>COM10</string>
-              </property>
-             </item>
-            </widget>
-           </item>
-           <item row="0" column="3">
-            <widget class="QPushButton" name="LightEngineConnectButton">
-             <property name="text">
-              <string>Connect</string>
              </property>
             </widget>
            </item>
@@ -305,40 +218,6 @@ QPushButton#AbortPrint:hover:!pressed {
              <property name="text">
               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Servo2:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
-            </widget>
-           </item>
-           <item row="2" column="1">
-            <widget class="QComboBox" name="COMPortSelectPump">
-             <item>
-              <property name="text">
-               <string>COM3</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>COM4</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>COM5</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>COM6</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>COM7</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>COM8</string>
-              </property>
-             </item>
             </widget>
            </item>
            <item row="3" column="1">
@@ -373,26 +252,6 @@ QPushButton#AbortPrint:hover:!pressed {
                <string>COM8</string>
               </property>
              </item>
-            </widget>
-           </item>
-           <item row="2" column="2">
-            <widget class="QLabel" name="PumpConnectionIndicator">
-             <property name="styleSheet">
-              <string notr="true">background:rgb(255, 0, 0); border: 1px solid black;</string>
-             </property>
-             <property name="text">
-              <string>Disconnected</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="3">
-            <widget class="QPushButton" name="PumpConnectButton">
-             <property name="text">
-              <string>Connect</string>
-             </property>
             </widget>
            </item>
            <item row="3" column="2">
@@ -757,22 +616,6 @@ QPushButton#AbortPrint:hover:!pressed {
              </property>
             </widget>
            </item>
-           <item row="0" column="0" colspan="3">
-            <widget class="QSlider" name="CurrentStagePos">
-             <property name="minimum">
-              <number>-5</number>
-             </property>
-             <property name="maximum">
-              <number>65</number>
-             </property>
-             <property name="sliderPosition">
-              <number>0</number>
-             </property>
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-            </widget>
-           </item>
            <item row="2" column="2" colspan="2">
             <widget class="QComboBox" name="LiveValueList5">
              <item>
@@ -891,6 +734,22 @@ QPushButton#AbortPrint:hover:!pressed {
              </item>
             </widget>
            </item>
+           <item row="0" column="0" colspan="3">
+            <widget class="QSlider" name="CurrentStagePos">
+             <property name="minimum">
+              <number>-5</number>
+             </property>
+             <property name="maximum">
+              <number>65</number>
+             </property>
+             <property name="sliderPosition">
+              <number>0</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
           </layout>
          </item>
         </layout>
@@ -898,8 +757,24 @@ QPushButton#AbortPrint:hover:!pressed {
       </item>
      </layout>
     </item>
+    <item row="0" column="1">
+     <widget class="graphics" name="GraphicWindow" native="true"/>
+    </item>
     <item row="0" column="0" rowspan="2">
-     <layout class="QGridLayout" name="gridLayout_3" rowstretch="6,0,0,0,0,0,0,0,0,0" columnstretch="5,0">
+     <layout class="QGridLayout" name="gridLayout_3" rowstretch="6,0,0,0,0,0,0,0,0,0" columnstretch="5,0,0,0,0">
+      <item row="4" column="4">
+       <widget class="QLabel" name="StageConnectionIndicator">
+        <property name="styleSheet">
+         <string notr="true">background:rgb(255, 0, 0); border: 1px solid black;</string>
+        </property>
+        <property name="text">
+         <string>Disconnected</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
       <item row="2" column="0">
        <widget class="QLabel" name="label">
         <property name="sizePolicy">
@@ -911,137 +786,6 @@ QPushButton#AbortPrint:hover:!pressed {
         <property name="text">
          <string>Pump</string>
         </property>
-       </widget>
-      </item>
-      <item row="0" column="0" colspan="2">
-       <widget class="QLabel" name="DeSimoneLabLogo">
-        <property name="styleSheet">
-         <string notr="true">image: url(:/new/pics/desimone_lab_wordmark-nobg.png);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap>:/new/prefix1/desimone_lab_wordmark-nobg.png</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="7" column="0">
-       <widget class="QLabel" name="label_5">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="text">
-         <string>Projection Mode</string>
-        </property>
-       </widget>
-      </item>
-      <item row="9" column="0" colspan="2">
-       <widget class="QGroupBox" name="PopoutBox">
-        <property name="title">
-         <string>Popout Windows</string>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <property name="leftMargin">
-          <number>5</number>
-         </property>
-         <property name="topMargin">
-          <number>0</number>
-         </property>
-         <property name="rightMargin">
-          <number>5</number>
-         </property>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout">
-           <item>
-            <widget class="QPushButton" name="ImageProcess">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>60</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Image 
- Processing</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="FocusCal">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>60</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Focus
-Calibration</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="ManualPumpControl">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>60</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Manual 
- Pump Control</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="ManualStage">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>60</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Manual
- Stage Control</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
        </widget>
       </item>
       <item row="5" column="1">
@@ -1069,7 +813,21 @@ Calibration</string>
         </item>
        </widget>
       </item>
-      <item row="8" column="0" colspan="2">
+      <item row="2" column="3">
+       <widget class="QPushButton" name="PumpConnectButton">
+        <property name="text">
+         <string>Connect</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QPushButton" name="StageConnectButton">
+        <property name="text">
+         <string>Connect</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0" colspan="5">
        <widget class="QTabWidget" name="tabWidget_2">
         <property name="enabled">
          <bool>true</bool>
@@ -1458,6 +1216,126 @@ p, li { white-space: pre-wrap; }
         </widget>
        </widget>
       </item>
+      <item row="2" column="2">
+       <widget class="QComboBox" name="COMPortSelectPump">
+        <item>
+         <property name="text">
+          <string>COM3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>COM4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>COM5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>COM6</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>COM7</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>COM8</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="4">
+       <widget class="QLabel" name="LightEngineIndicator">
+        <property name="styleSheet">
+         <string notr="true">background:rgb(255, 0, 0); border: 1px solid black;</string>
+        </property>
+        <property name="text">
+         <string>Disconnected</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="ProjectionModeDropdown">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text">
+          <string>Pattern On The Fly (POTF)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Video Pattern (VP)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string notr="true">Video</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="DeSimoneLabLogo">
+        <property name="styleSheet">
+         <string notr="true">image: url(:/new/pics/desimone_lab_wordmark-nobg.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>:/new/prefix1/desimone_lab_wordmark-nobg.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="PumpDropdown">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Harvard Apparatus</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Debugging Dummy</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QPushButton" name="LightEngineConnectButton">
+        <property name="text">
+         <string>Connect</string>
+        </property>
+       </widget>
+      </item>
       <item row="3" column="1">
        <widget class="QComboBox" name="RollToRollDropdown">
         <property name="sizePolicy">
@@ -1476,6 +1354,45 @@ p, li { white-space: pre-wrap; }
           <string>Arduino R2R v.1</string>
          </property>
         </item>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Stage</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QLabel" name="PumpConnectionIndicator">
+        <property name="styleSheet">
+         <string notr="true">background:rgb(255, 0, 0); border: 1px solid black;</string>
+        </property>
+        <property name="text">
+         <string>Disconnected</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Light Engine</string>
+        </property>
        </widget>
       </item>
       <item row="4" column="1">
@@ -1508,82 +1425,6 @@ p, li { white-space: pre-wrap; }
         </item>
        </widget>
       </item>
-      <item row="2" column="1">
-       <widget class="QComboBox" name="PumpDropdown">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <item>
-         <property name="text">
-          <string>None</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Harvard Apparatus</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Debugging Dummy</string>
-         </property>
-        </item>
-       </widget>
-      </item>
-      <item row="4" column="0">
-       <widget class="QLabel" name="label_2">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="text">
-         <string>Stage</string>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="0">
-       <widget class="QLabel" name="label_3">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="text">
-         <string>Light Engine</string>
-        </property>
-       </widget>
-      </item>
-      <item row="7" column="1">
-       <widget class="QComboBox" name="ProjectionModeDropdown">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <item>
-         <property name="text">
-          <string>Pattern On The Fly (POTF)</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Video Pattern (VP)</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string notr="true">Video</string>
-         </property>
-        </item>
-       </widget>
-      </item>
       <item row="3" column="0">
        <widget class="QLabel" name="label_6">
         <property name="sizePolicy">
@@ -1595,6 +1436,165 @@ p, li { white-space: pre-wrap; }
         <property name="text">
          <string>Roll to Roll</string>
         </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Projection Mode</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0" colspan="2">
+       <widget class="QGroupBox" name="PopoutBox">
+        <property name="title">
+         <string>Popout Windows</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="leftMargin">
+          <number>5</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="ImageProcess">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Image 
+ Processing</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="FocusCal">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Focus
+Calibration</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="ManualPumpControl">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Manual 
+ Pump Control</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="ManualStage">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Manual
+ Stage Control</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QComboBox" name="COMPortSelect">
+        <item>
+         <property name="text">
+          <string>COM3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>COM4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>COM5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>COM6</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>COM7</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>COM8</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>COM9</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>COM10</string>
+         </property>
+        </item>
        </widget>
       </item>
      </layout>

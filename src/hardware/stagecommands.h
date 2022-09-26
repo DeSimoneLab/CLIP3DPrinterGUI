@@ -69,6 +69,7 @@ class StageCommands: public QObject {
  private:
   void GetValues();
   void verifyStageParams(PrintSettings s_PrintSettings);
+  void printSerialMessage(byte * message, int N = 6);
 
  private slots:
   void initStageSlot();

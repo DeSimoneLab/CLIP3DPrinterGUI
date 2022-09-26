@@ -82,7 +82,7 @@ MainWindow::MainWindow(QWidget* parent) :
     ui->SettingsWidget->initSettingsPointers(&m_PrintSettings, &m_PrintControls, &m_PrintScript, &m_InjectionSettings);
     PrintControl.getControlPointers(&m_PrintSettings, &m_PrintControls, &m_PrintScript);
     loadSettings(); //load settings from settings file
-    autoConnect();
+    //autoConnect();
     initSettings(); //initialize settings by updating ui
     ui->GraphicWindow->initPlot(m_PrintControls, m_PrintSettings, m_PrintScript);
 }
@@ -1118,6 +1118,8 @@ void MainWindow::PrintComplete() {
     saveText();
     saveSettings();
     Stage.StageStop(m_PrintSettings.StageType);
+    Sleep(50);
+    Stage.SetStageAcceleration(2, m_PrintSettings.StageType);
     Sleep(50);
     Stage.SetStageVelocity(2, m_PrintSettings.StageType);
     Sleep(50);
