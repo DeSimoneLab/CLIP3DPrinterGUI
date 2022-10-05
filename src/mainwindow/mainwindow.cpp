@@ -722,8 +722,8 @@ void MainWindow::on_StageConnectButton_clicked() {
         char* COM = array.data();
 
         // if successful connection and home
-        if (Stage.StageInit(COM, m_PrintSettings.StageType) == true
-                && Stage.StageHome(m_PrintSettings.StageType) == true) {
+        if (Stage.StageInit(COM, m_PrintSettings.StageType) == true) {
+            //                && Stage.StageHome(m_PrintSettings.StageType) == true) {
             ui->StageConnectionIndicator->setStyleSheet("background:rgb(0, 255, 0);border: 1px solid black;");
             ui->StageConnectionIndicator->setText("Connected");
             Sleep(10);

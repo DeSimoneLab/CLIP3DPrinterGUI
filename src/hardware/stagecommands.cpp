@@ -93,7 +93,7 @@ int StageCommands::StageInit(const char* COMPort, Stage_t StageType) {
 
             // request for home
             byte message4[6] = { 0x43, 0x04, 0x01, 0x00, 0x50, 0x01 }; // home
-            result = StageSerial.writeBytes(message4, 6);
+            //result = StageSerial.writeBytes(message4, 6);
             //printf("Sent message4 / home, result: %d", result);
 
             Sleep(100);
@@ -576,8 +576,11 @@ static int MovementAttempts = 0;
  * 3.2mm above the starting position calls the fineMovement function
  */
 void StageCommands::initStageSlot() {
-    if (s_PrintSettings.StageType == STAGE_SMC) {
-        double CurrentPosition = StageGetPosition(STAGE_SMC).toDouble();
+    if (s_PrintSettings.StageType == STAGE_GCODE) {
+        emit StagePrintSignal("Auto stage initialization disabled for GCODE stage, please move stage to endstop with manual controls");
+    }
+    else {
+        double CurrentPosition = StageGetPosition(s_PrintSettings.StageType).toDouble();
         emit StageGetPositionSignal(QString::number(CurrentPosition));
         if (CurrentPosition < (s_PrintSettings.StartingPosition - 3.2)) {
             SetStageAcceleration(3, s_PrintSettings.StageType);
@@ -589,8 +592,6 @@ void StageCommands::initStageSlot() {
         } else {
             fineMovement();
         }
-    } else {
-        emit StagePrintSignal("Auto stage initialization disabled for iCLIP, please move stage to endstop with manual controls");
     }
 }
 
